@@ -6,3 +6,12 @@
 # A = 3; B = 5 -> 243 (3⁵)
 #     A = 2; B = 3 -> 8 
 
+a = int(input('->: ' ))
+b = int(input('->: ' ))
+def degpee(a , b ):
+    if b == 0:
+        return 1
+    else:    
+        return a * degpee( a, b-1)    
+print (degpee(a , b))
+    
